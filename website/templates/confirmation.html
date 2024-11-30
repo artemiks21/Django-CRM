@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<form action="" method="POST">
+    {% csrf_token %}
+    <div class="card text-bg-light mb-3" style="max-width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title">Are you sure you wanna delete this?</h5>
+          <button type="value" class="btn btn-primary">Yes</button>
+          <button type="button" class="btn btn-light"><a href="{%url 'home'%}" style="text-decoration: none; color: black;" >No</a></button>
+        </div>
+
+      </div>
+</form>
+{% endblock %}
